@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Nunito+Sans:opsz@6..12&family=Poppins:ital,wght@1,200;1,400&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat:ital,wght@1,300&family=Nunito+Sans:opsz@6..12&family=Poppins:ital,wght@1,200;1,400&family=Raleway:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2EAE2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fraunces", serif;
+    height: 100vh;
+    font-size: 14px;
+}
+
+
+.principal {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;  
+    max-width: 300px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.img-desktop {
+    display: none;
+}
+
+.img-mobile {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.container-texto {
+    padding: 15px;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 13px;
+    letter-spacing: 8px;     
+    color: #6C7289;
+}
+
+
+p {
+    opacity: 0.7;    
+    line-height: 1.3rem;
+    padding: 10px 0;
+}
+
+h2 {
+    margin-top: 1rem;
+    width: 80%;
+    font-size: 24px;
+}
+
+.price {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.new-price {
+    color: #3D8168;
+    font-weight: bold;
+    font-size: 32px;
+    
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+button {
+    background-color: #3D8168;
+    border: none;
+    color: white;
+    width: 100%;
+    height: 50px;
+    font-weight: 700;   
+    font-size: 14px; 
+    border-radius: 5px;
+    margin: 20px 0 10px 0;
+
+}
+
+.cart-icon {
+    width: 15px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+@media (min-width: 700px) {
+
+    .principal {
+        flex-direction: row;
+        max-width: 600px;
+        height: 450px;
+    }
+
+    .img-desktop {        
+        display: block;
+        width: 60%;
+        border-radius: 10px 0 0 10px;
+        
+    }
+    
+    .img-mobile {
+        display: none;
+    }
+
+    .container-texto {
+        width: 50%;
+        padding-right: 30px;
+        padding-left: 20px;
+    }
+
+    
+}
